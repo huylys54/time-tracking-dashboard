@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Time tracking dashboard (Static)</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="profile">
+        <div class="profile-container">
+          <img src="./images/huylys.png" alt="huylys" />
+          <div class="information">
+            <p class="for">Report for</p>
+            <h1 class="name">Huy Ly</h1>
+          </div>
+        </div>
+        <div class="time-options">
+          <button class="time-option" data-option="daily"> Daily </button>
+          <button class="time-option" data-option="weekly"> Weekly </button>
+          <button class="time-option" data-option="monthly"> Monthly </button>
+        </div>
+      </div>
+
+      <div class="activity-tracker work">
+        <div class="background">
+          <img src="./images/icon-work.svg" alt="" />
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Work</h2>
+            <div width="21" height="5" class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </header>
+          <div class="activity-time">
+            <h3 class="activity-current_time">48hrs</h3>
+            <div class="activity-previous_time">
+              <p class="time-window">Last week</p>
+              <p> - </p>
+              <p class="time">48hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-tracker play">
+        <div class="background">
+          <img src="./images/icon-play.svg" alt="" />
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Play</h2>
+            <div width="21" height="5" class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </header>
+          <div class="activity-time">
+            <h3 class="activity-current_time">12hrs</h3>
+            <div class="activity-previous_time">
+              <p class="time-window">Last week</p>
+              <p>-</p>
+              <p class="time">12hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-tracker study">
+        <div class="background">
+          <img src="./images/icon-study.svg" alt="" />
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Study</h2>
+            <div width="21" height="5" class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </header>
+          <div class="activity-time">
+            <h3 class="activity-current_time">48hrs</h3>
+            <div class="activity-previous_time">
+              <p class="time-window">Last week</p>
+              <p>-</p>
+              <p class="time">48hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-tracker exercise">
+        <div class="background">
+          <img src="./images/icon-exercise.svg" alt="" />
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Exercise</h2>
+            <div width="21" height="5" class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </header>
+          <div class="activity-time">
+            <h3 class="activity-current_time">48hrs</h3>
+            <div class="activity-previous_time">
+              <p class="time-window">Last week</p>
+              <p>-</p>
+              <p class="time">48hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-tracker social">
+        <div class="background">
+          <img src="./images/icon-social.svg" alt="" />
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Social</h2>
+            <div width="21" height="5" class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </header>
+          <div class="activity-time">
+            <h3 class="activity-current_time">48hrs</h3>
+            <div class="activity-previous_time">
+              <p class="time-window">Last week</p>
+              <p>-</p>
+              <p class="time">48hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-tracker self-care">
+        <div class="background">
+          <img src="./images/icon-self-care.svg" alt="" />
+        </div>
+        <div class="activity-info">
+          <header class="activity-header">
+            <h2 class="activity-name">Self Care</h2>
+            <div width="21" height="5" class="activity-option">
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+          </header>
+          <div class="activity-time">
+            <h3 class="activity-current_time">48hrs</h3>
+            <div class="activity-previous_time">
+              <p class="time-window">Last week</p>
+              <p>-</p>
+              <p class="time">48hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
