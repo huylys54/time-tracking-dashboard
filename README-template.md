@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [Zach Gollwitzer](https://www.youtube.com/@zachgoll) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Seer Studio (Grizhlie Codes)](https://www.youtube.com/watch?v=l9Qw8y3LfCY&t=1024s) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Zach Gollwitzer](https://www.youtube.com/@zachgoll) - I learn HTML, JS, CSS concept from him.
+- [Seer Studio (Grizhlie Codes)](https://www.youtube.com/watch?v=l9Qw8y3LfCY&t=1024s) - Guide to this challenge.
 
 ## Acknowledgments
 
