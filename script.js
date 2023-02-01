@@ -157,7 +157,7 @@ const renderCards = (clickedOption) => {
             <h3 class="activity-current_time">${timeframe.current}hrs</h3>
             <div class="activity-previous_time">
               <p class="time-window">${previousTimeframe}</p>
-              <p> - </p>
+              <p>&nbsp-&nbsp</p>
               <p class="time">${timeframe.previous}hrs</p>
             </div>
           </div>
